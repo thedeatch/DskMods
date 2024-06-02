@@ -27741,8 +27741,8 @@ brushDef
 // entity 110
 {
 "classname" "light"
-"light" "701"
+"light" "500"
 "_color" "1.000000 0.900794 0.753968"
 "scale" "0.3"
-"origin" "408 -384 64"
+"origin" "296 -384 64"
 }
