@@ -27650,3 +27650,99 @@ brushDef
 "noise" "sound/effects/fire_lp.wav"
 "origin" "408 -158 42"
 }
+// entity 99
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-616 -392 208"
+}
+// entity 100
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-616 -872 208"
+}
+// entity 101
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-328 -384 208"
+}
+// entity 102
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-328 -880 208"
+}
+// entity 103
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-72 -376 208"
+}
+// entity 104
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-72 -872 208"
+}
+// entity 105
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "216 -880 208"
+}
+// entity 106
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-616 472 208"
+}
+// entity 107
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-616 24 208"
+}
+// entity 108
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-328 464 208"
+}
+// entity 109
+{
+"classname" "light"
+"light" "201"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "2"
+"origin" "-328 16 208"
+}
+// entity 110
+{
+"classname" "light"
+"light" "701"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "0.3"
+"origin" "408 -384 64"
+}
