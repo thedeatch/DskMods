@@ -6,11 +6,18 @@ exit /b
 #>
 
 # Code init
-Write-Host " _____________________________"
-Write-Host "|                             |"
-Write-Host "| SIMPLE WAY FOR .BSP TO .MAP |"
-Write-Host "|                 BY DSK CLAN |"
-Write-Host "|_____________________________|`n"
+Write-Host "________________________________________"
+Write-Host "|        ___ _____      _   ___        |"
+Write-Host "|       |  _|  __ \    | | |_  |       |"
+Write-Host "|  __  _| | | |  | |___| | __| |_  __  |"
+Write-Host "|  \ \/ / | | |  | / __| |/ /| \ \/ /  |"
+Write-Host "|   >  <| | | |__| \__ \   < | |>  <   |"
+Write-Host "|  /_/\_\ |_|_____/|___/_|\_\| /_/\_\  |"
+Write-Host "|       |___|              |___|       |"
+Write-Host "|                                      |"
+Write-Host "| - Simple Map Converter Tool          |"
+Write-Host "| - Load Q3map2 with custom params     |"
+Write-Host "|______________________________________|`n"
 
 # Ensure the required assembly is loaded
 Add-Type -AssemblyName System.Windows.Forms
