@@ -34,7 +34,7 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
     $fileDialog = New-Object System.Windows.Forms.OpenFileDialog
     
     # Set the initial directory to the previously selected folder
-    $fileDialog.InitialDirectory = $selectedFolder
+    $fileDialog.InitialDirectory = "$selectedFolder/base"
     
     # Set the filter to only show .BSP files
     $fileDialog.Filter = "BSP files (*.BSP)|*.BSP"
@@ -50,16 +50,27 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
         # Output the selected file path
         $selectedFile = $fileDialog.FileName
         Write-Host "Your BSP: $selectedFile"
-		$customArgs = Read-Host "Enter custom arguments (Press ENTER to skip)"
+		$inputArgs = Read-Host "Enter custom arguments (Press ENTER to skip)"
+		$customArgs = "-game ja"
+		
+		if ($inputArgs) {
+			$customArgs += " "+$inputArgs
+		}
 		
 		# Confirm
 		Write-Host -NoNewLine "Attempting to run: "
-		Write-Host "q3map2.exe -game ja -fs_basepath ""Your GameData"" -fs_game ""base"" -convert -format map_bp ""Your BSP"" $customArgs" -fo Yellow;
+		Write-Host "q3map2.exe $customArgs -fs_basepath `"Your GameData`" -fs_game `"base`" -convert -format map_bp `"Your BSP`"" -fo Yellow;
 		Write-Host "Do you want continue?"; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 		
 		#Finish
 		$exeFile = "q3map2.exe"
-		$exeArgs = @("-game ja -fs_basepath ""$selectedFolder"" -fs_game base -convert -format map_bp ""$selectedFile"" $customArgs")
+		$exeArgs = @(
+			$customArgs,
+			"-fs_basepath `"$selectedFolder`"",
+			"-fs_game base",
+			"-convert -format map_bp `"$selectedFile`""
+		)
+		
 		Start-Process -FilePath $exeFile -ArgumentList $exeArgs -NoNewWindow -Wait
     } else {
         Write-Host "File selection was cancelled."
