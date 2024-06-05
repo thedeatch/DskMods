@@ -3,3 +3,4 @@
 Maps/*/shaders/shaderlist.txt
 Maps/*/maps/*
 !Maps/*/maps/*.map
+Maps/*/maps/*.autosave.map
