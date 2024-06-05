@@ -36555,3 +36555,27 @@ bespin/n_floor01
 "origin" "-1400 1731 751"
 "target" "t33"
 }
+// entity 544
+{
+"classname" "light"
+"light" "1000"
+"radius" "10000"
+"_color" "0.733333 1.000000 0.988235"
+"origin" "-3604 94 -651"
+}
+// entity 545
+{
+"classname" "light"
+"light" "1000"
+"radius" "10000"
+"_color" "0.733333 1.000000 0.988235"
+"origin" "-3556 94 -651"
+}
+// entity 546
+{
+"classname" "light"
+"light" "1000"
+"radius" "10000"
+"_color" "0.733333 1.000000 0.988235"
+"origin" "-3508 78 -651"
+}
