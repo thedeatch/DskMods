@@ -1,0 +1,5 @@
+# Maps stuff
+
+Maps/*/shaders/shaderlist.txt
+Maps/*/maps/*
+!Maps/*/maps/*.map
