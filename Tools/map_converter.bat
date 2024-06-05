@@ -35,7 +35,7 @@ $result = $folderBrowser.ShowDialog()
 if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
     # Output the selected folder path
     $selectedFolder = $folderBrowser.SelectedPath
-    Write-Host "Your GameData: $selectedFolder"
+    Write-Host "Your Folder: $selectedFolder"
     
     # Create a new OpenFileDialog object
     $fileDialog = New-Object System.Windows.Forms.OpenFileDialog
@@ -43,11 +43,11 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
     # Set the initial directory to the previously selected folder
     $fileDialog.InitialDirectory = "$selectedFolder/base"
     
-    # Set the filter to only show .BSP files
-    $fileDialog.Filter = "BSP files (*.BSP)|*.BSP"
+    # Set the filter to only show filtered files
+    $fileDialog.Filter = "BSP files (*.BSP)|*.BSP|MAP files (*.MAP)|*.MAP|ENT files (*.ENT)|*.ENT|All files (*.*)|*.*"
     
     # Set the dialog title
-    $fileDialog.Title = "Select a BSP file"
+    $fileDialog.Title = "Select a file"
     
     # Show the dialog to select a file
     $fileResult = $fileDialog.ShowDialog()
@@ -56,8 +56,8 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
     if ($fileResult -eq [System.Windows.Forms.DialogResult]::OK) {
         # Output the selected file path
         $selectedFile = $fileDialog.FileName
-        Write-Host "Your BSP: $selectedFile"
-		$inputArgs = Read-Host "Enter custom arguments (Press ENTER to skip)"
+        Write-Host "Your File: $selectedFile"
+		$inputArgs = Read-Host "Custom Arguments (Press ENTER to skip)"
 		$customArgs = "-game ja"
 		
 		if ($inputArgs) {
@@ -66,8 +66,9 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
 		
 		# Confirm
 		Write-Host -NoNewLine "Attempting to run: "
-		Write-Host "q3map2.exe $customArgs -fs_basepath `"Your GameData`" -fs_game `"base`" -convert -format map_bp `"Your BSP`"" -fo Yellow;
-		Write-Host "Do you want continue?"; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+		Write-Host "q3map2.exe $customArgs -fs_basepath `"Your Folder`" -fs_game `"base`" -convert -format map_bp `"Your File`"" -fo Yellow;
+		Write-Host -NoNewLine "Do you want continue?"; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+		Clear-Host
 		
 		#Finish
 		$exeFile = "q3map2.exe"
