@@ -2,7 +2,7 @@
 // entity 0
 {
 "classname" "worldspawn"
-"message" "DskArena"
+"message" "^3x^4[^7D^1s^7k^4]^3x ^7Arena"
 "music" "music/amok.mp3"
 "angle" "270"
 // brush 0
