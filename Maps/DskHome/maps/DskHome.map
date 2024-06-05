@@ -3,7 +3,7 @@
 {
 "classname" "worldspawn"
 "music" "music/yavin_swamp/swamp_explore.mp3"
-"message" "DskHome"
+"message" "^3x^4[^7D^1s^7k^4]^3x ^7Home"
 // brush 0
 {
 brushDef
