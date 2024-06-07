@@ -81,35 +81,3 @@ textures/casa/flat_yellow
         map textures/casa/flat_yellow
     }
 }
-
-textures/casa/casa_water
-{
-	qer_editorimage	textures/casa/casa_water
-	surfaceparm	metalsteps
-	surfaceparm	nonsolid
-	surfaceparm	nonopaque
-	surfaceparm	water
-	surfaceparm	fog
-	surfaceparm	trans
-	q3map_material	Water
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-	fogparms	( 0.113725 0.137255 0.380392 ) 1024.0
-    {
-        map textures/casa/casa_water
-        blendFunc GL_ONE GL_ONE_MINUS_SRC_ALPHA
-        rgbGen exactVertex
-        alphaGen const 0.2
-        tcMod scroll 0.005 0.01
-        tcMod turb 1 0.03 0 0.3
-    }
-    {
-        map textures/casa/casa_water
-        blendFunc GL_ONE GL_SRC_ALPHA
-        rgbGen exactVertex
-        alphaGen const 0.2
-        tcMod scroll -0.005 -0.01
-        tcMod turb 0 -0.03 0.5 -0.3
-    }
-}
-
