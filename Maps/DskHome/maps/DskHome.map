@@ -9693,3 +9693,24 @@ brushDef
 }
 }
 }
+// entity 153
+{
+"classname" "misc_model"
+"origin" "1187 -178 272"
+"model" "models/mapobjects/qkqtoilet/sink.md3"
+"angle" "270"
+}
+// entity 154
+{
+"classname" "misc_model"
+"origin" "1127 -147 285"
+"model" "models/mapobjects/qkqtoilet/toilet.md3"
+}
+// entity 155
+{
+"classname" "light"
+"light" "500"
+"_color" "1.000000 0.900794 0.753968"
+"scale" "0.3"
+"origin" "1164 -112 328"
+}
