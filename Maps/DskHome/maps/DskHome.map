@@ -8113,6 +8113,18 @@ photorealistic_marble/granit08
 )
 }
 }
+// brush 676
+{
+brushDef
+{
+( -2408 -2864 1456 ) ( -2408 -2864 1408 ) ( -2408 2136 1408 ) ( ( 0.0625 0 0 ) ( 0 0.0625 0 ) ) skies/kejim 0 0 0
+( 3864 2136 1456 ) ( 3864 2136 1408 ) ( 3864 -2864 1408 ) ( ( 0.0625 0 0 ) ( 0 0.0625 0 ) ) skies/kejim 0 0 0
+( 3864 -2864 1456 ) ( 3864 -2864 1408 ) ( -2408 -2864 1408 ) ( ( 0.0625 0 0 ) ( 0 0.0625 0 ) ) skies/kejim 0 0 0
+( -2408 2136 1456 ) ( -2408 2136 1408 ) ( 3864 2136 1408 ) ( ( 0.0625 0 0 ) ( 0 0.0625 0 ) ) skies/kejim 0 0 0
+( -2408 2136 1408 ) ( -2408 -2864 1408 ) ( 3864 -2864 1408 ) ( ( 0 -0.0625 0 ) ( -0.0625 0 0 ) ) skies/kejim 0 0 0
+( -2408 -2864 1456 ) ( -2408 2136 1456 ) ( 3864 2136 1456 ) ( ( 0.0625 0 0 ) ( 0 0.0625 0 ) ) skies/kejim 0 0 0
+}
+}
 }
 // entity 1
 {
@@ -9146,4 +9158,71 @@ brushDef
 "classname" "misc_model"
 "origin" "1127 -147 285"
 "model" "models/mapobjects/qkqtoilet/toilet.md3"
+}
+// entity 103
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1232 -48 104"
+"scale" "7"
+}
+// entity 104
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1008 -48 104"
+"scale" "7"
+}
+// entity 105
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1232 192 104"
+"scale" "7"
+}
+// entity 106
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1008 192 104"
+"scale" "7"
+}
+// entity 107
+{
+"classname" "light"
+"light" "700"
+"_color" "1 1 1"
+"origin" "1584 -208 280"
+}
+// entity 108
+{
+"classname" "light"
+"light" "700"
+"_color" "1 1 1"
+"origin" "2080 -208 280"
+}
+// entity 109
+{
+"classname" "light"
+"light" "700"
+"_color" "1 1 1"
+"origin" "1584 -768 280"
+}
+// entity 110
+{
+"classname" "light"
+"light" "700"
+"_color" "1 1 1"
+"origin" "2080 -768 280"
+}
+// entity 111
+{
+"classname" "light"
+"light" "700"
+"_color" "1 1 1"
+"origin" "2080 -208 280"
 }
