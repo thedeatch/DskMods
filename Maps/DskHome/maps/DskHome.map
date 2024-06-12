@@ -4,6 +4,7 @@
 "classname" "worldspawn"
 "music" "music/yavin_swamp/swamp_explore.mp3"
 "message" "^3x^4[^7D^1s^7k^4]^3x ^7Home"
+"ambient" "50"
 // brush 0
 {
 brushDef
