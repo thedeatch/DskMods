@@ -19,6 +19,9 @@ Write-Host "| - Simple Map Converter Tool          |"
 Write-Host "| - Load Q3map2 with custom params     |"
 Write-Host "|______________________________________|`n"
 
+# Path to the temp file
+$tempFilePath = "$env:TEMP\DskMods-lastSelectedFolder.txt"
+
 # Ensure the required assembly is loaded
 Add-Type -AssemblyName System.Windows.Forms
 
@@ -28,6 +31,15 @@ $folderBrowser = New-Object System.Windows.Forms.FolderBrowserDialog
 # Set the description text
 $folderBrowser.Description = "Select the GameData folder"
 
+# If the temp file exists, read the previous folder
+if (Test-Path -Path $tempFilePath) {
+    $previousFolder = Get-Content -Path $tempFilePath -Raw
+	$previousFolder = $previousFolder.Trim()
+    if (Test-Path -Path $previousFolder) {
+        $folderBrowser.SelectedPath = $previousFolder
+    }
+}
+
 # Show the dialog to select a folder
 $result = $folderBrowser.ShowDialog()
 
@@ -36,6 +48,9 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK) {
     # Output the selected folder path
     $selectedFolder = $folderBrowser.SelectedPath
     Write-Host "Your Folder: $selectedFolder"
+	
+	# Save the selected folder to the temp file
+    Set-Content -Path $tempFilePath -Value $selectedFolder
     
     # Create a new OpenFileDialog object
     $fileDialog = New-Object System.Windows.Forms.OpenFileDialog
