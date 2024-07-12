@@ -12416,3 +12416,115 @@ brushDef
 "origin" "1407 108 257"
 "model" "models/map_objects/nar_shaddar/plant.md3"
 }
+// entity 181
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1232 384 104"
+"scale" "7"
+}
+// entity 182
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1008 384 104"
+"scale" "7"
+}
+// entity 183
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1232 624 104"
+"scale" "7"
+}
+// entity 184
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "1008 624 104"
+"scale" "7"
+}
+// entity 185
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "384 544 104"
+"scale" "7"
+}
+// entity 186
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "160 544 104"
+"scale" "7"
+}
+// entity 187
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "384 784 104"
+"scale" "7"
+}
+// entity 188
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "160 784 104"
+"scale" "7"
+}
+// entity 189
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "320 -128 104"
+"scale" "7"
+}
+// entity 190
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "96 -128 104"
+"scale" "7"
+}
+// entity 191
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "320 112 104"
+"scale" "7"
+}
+// entity 192
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "96 112 104"
+"scale" "7"
+}
+// entity 193
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "320 320 104"
+"scale" "7"
+}
+// entity 194
+{
+"classname" "light"
+"light" "30"
+"_color" "1.000000 0.900794 0.753968"
+"origin" "96 320 104"
+"scale" "7"
+}
