@@ -1,0 +1,57 @@
+10/04/2003
+  riant
+  - Updated scripts/default_project.proj for 1.3 Compat with q2map3 as the default compiler.
+
+24/03/2003
+  riant
+  - Added Synapse.Config for 1.3 Compat
+  - Added default_project.proj with new q3map2 compile settings.
+
+08/03/2002
+  riant
+  - removed Sof2BSP, BehaveEd, EffectsEd, IBIze and row executable to RavenPack
+  - removed Raven's Guide to SOF2JK2 Vertigons.doc to Guide to SOF2JK2 Vertigons.htm to RavenPack
+  - removed Raven's Guide to SOF2JK2 Weather.doc to Guide to SOF2JK2 Weather.htm to RavenPack
+  - removed Raven's ICARUS Manual.doc to ICARUS Manual.htm to RavenPack
+  - removed Raven's Using_EffectsEd.doc to Using_EffectsEd.htm to RavenPack
+
+
+06/07/2002
+  riant
+  - created mapextras2.pk3 from Raven's second SDK release, inclusing new models and textures
+  - added BehaveEd, EffectsEd, IBIze and row executable to the pack
+  - converted Raven's Bot waypoint tutorial.doc to Bot waypoint tutorial.htm
+  - converted Raven's Guide to SOF2JK2 Vertigons.doc to Guide to SOF2JK2 Vertigons.htm
+  - converted Raven's Guide to SOF2JK2 Weather.doc to Guide to SOF2JK2 Weather.htm
+  - converted Raven's ICARUS Manual.doc to ICARUS Manual.htm
+  - converted Raven's Using_EffectsEd.doc to Using_EffectsEd.htm
+  - Added models, maps and Prefabs from Raven's 2nd SDK
+
+05/11/2002
+  riant
+  - extracted /models/map_objects/doom/airpurifier.md3 from mapextras.pk3 and removed it from the .pk3
+  - added /docs/GtkRadiant_JK2_HOWTO html + .PNG files
+  - modified game.xlink to add GtkRadiant_JK2_HOWTO shortcut
+  - removed all of the .glm and .gla files from the pack (not necessary to keep them)
+  TTimo
+  - importing Riant updates
+  - updated the getting started guide with complete info about compile and run
+  - removing all .gla .glm from cvs media
+  - Riant's newer mapextras.pk3 was invalid, misses the radiant texes
+  - updated game.xlink with mapcenter forum
+
+05/10/2002
+  Raven
+  - contributed new mapextras.pk3 file
+
+05/08/2002
+  TTimo
+  - import into CVS of the JKII pack
+  - populate shaderlist.txt, putting all shader stuff in shaders/
+  - quickfix to quakev3.qe4
+  - built system.pk3 for the 'common' textures (which JKII calls 'system' ones .. oh well)
+  - commented out shaders/system.shader skip shader, that never worked in Q3 engines
+
+04/28/2002
+  riant
+  - Extraction from the Raven/Lucasarts Tools

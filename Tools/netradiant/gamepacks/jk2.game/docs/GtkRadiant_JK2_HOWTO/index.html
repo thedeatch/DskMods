@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>                    
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">                
+  <title>GtkRadiant and Return To Castle Wolfenstein</title>
+  <style TYPE="text/css">
+  <!--
+    a:link    { color: #9999FF ; text-decoration: none ; }
+    a:visited { color: #6666AA ; text-decoration: none ; }
+    a:hover   { color: #6666FF ; text-decoration: none ; }
+    h3        { color: #FFFFFF ; }
+    b         { color: #CCCCCC ; }
+    i         { color: #888888 ; font-size: 10pt ; }
+  //-->
+  </style>
+</head>
+
+<body bgcolor="#000000" text="#BBBBBB">
+
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse" width="100%"><tr><td>
+  <div align="center">
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse" width="100%">
+    <tr><td bgcolor="#003366" align="center">
+      <h3>GtkRadiant and Jedi Knight II: Jedi Outcast<br>Getting Started Guide</h3>
+    </td></tr>
+  </table>
+  </div>
+  
+  <p>
+    <b>Table of Contents</b>
+    <ol>
+    - <a href="#intro">
+      Introduction
+    </a><br>
+    - <a href="#games">
+      Multiple games support in GtkRadiant
+    </a><br>
+    - <a href="#project">
+      Project settings for JK2
+    </a><br>
+    - <a href="#monitor">
+      Compiling and running your maps
+    </a><br>
+    - <a href="#help">
+      Troubleshooting
+    </a><br>
+    </ol>
+  </p>
+  
+  <p>
+    <b><a name="intro">Introduction</a></b>
+    <p align="left">
+    The purpose of this document is to highlight the parts of <b>GtkRadiant</b> which have changed
+    in the new version 1.2. We also discuss the basics of level editing for 
+    <b>Jedi Knight II: Jedi Outcast</b>. This is not the GtkRadiant manual, or a mapping howto though
+    (those topics are covered in other help documents, and on websites).
+  
+  <p>
+    <b><a name="games">Multiple games support in GtkRadiant</a></b>
+    <p>
+    GtkRadiant supports level editing for multiple games through a central installation
+    and some game specific packages. In the case of <b>Jedi Knight II: Jedi Outcast</b> for instance,
+    the editor installs in <i>C:\Program Files\GtkRadiant</i> and puts the game package
+    in <i>C:\Program Files\Lucasarts\Jedi Knight II Outcast\Radiant</i> (these are default
+    paths on win32, your mileage may vary).
+    </p>
+    
+    <p>
+    When you execute the editor from the Start Menu, it will look for installed game packages.
+    If only one game pack is present, then it will start loading for this game directly,
+    otherwise it will prompt you with the <b>general preferences</b> dialog, asking you
+    which game you want to edit for.
+    </p>
+    
+    <p>
+    <div align="center">
+      <a href="game1.png">
+      <img src="game1.png" width="488" height="243" border="0">
+      <img src="game2.png" width="488" height="242" border="0"> </a>
+      <br>
+      <i>Game selection dialog</i>
+    </div>    
+    </p>
+    
+    <p>
+    The files describing which game packs are installed and where are in the 
+    <i>C:\Program Files\GtkRadiant\games</i> folder. They are created during setup to
+    match your particular settings.
+    </p>
+    
+  </p>
+  
+  <p>
+    <b><a name="project">Project Settings for JK2</a></b><p>
+    Once you have selected <b>Jedi Knight II: Jedi Outcast</b>, the editor will continue
+    loading using JK2 configuration. If it is the first run, it will create a default
+    project configuration for you. You can view and edit your project configuration from
+    the <b>Files > Project settings...</b> menu.
+    </p>
+    
+    <p>
+    <center>
+    <img src="project.png" width="576" height="440">
+    <br>
+    <i>Project settings dialog in JK2 mode</i>
+    </center>
+    </p>
+    
+    <p>
+    The only thing you have to modify in the project settings is the mapping mode
+    combo menu. Select the right configuration depending wether you are doing single 
+    player maps or multiplayer maps. Currently, the multiplayer/single player mapping
+    mode toggle will only affect the entities file that gets loaded. Multiplayer
+    uses <i>base/scripts/mp_entities.def</i> and Single Player uses 
+    <i>base/scripts/sp_entities.def</i>.
+    </p>
+    
+    <p>
+    A bit more of information about the project files: those are .qe4 files in 
+    <i>C:\Program Files\Lucasarts\Jedi Knight II Outcast\GameData\base\scripts</i>. There is a very
+    particular file there, 
+    <i>quakev2.qe4</i> which Radiant uses to generate your actual project. You should 
+    never modify this file unless you know what you are doing. The project files that 
+    Radiant uses for everyday run are the <i>user*.qe4</i> files.
+    </p>
+  </p>
+  
+  <p>
+    <b><a name="monitor">Compiling and running your maps</a></b>
+    <p>
+    Any map (i.e. <i>.map</i> file) needs to be 'compiled' into a <i>.bsp</i> file in order to
+    be loaded into the engine. This is done by <b>sof2bsp</b>, the compiling utility 
+    provided by Raven Software. Compilation of your level can only be done non-interactively 
+    as <b>sof2bsp</b> does not use the <i>monitored</i> mode.</p>
+    
+    <p>
+    Note that one <b>Single Player</b> sample map and one <b>Capture The 
+    Flag</b> sample map (namely <i>kejim_post.map </i>and<i> ctf_bespin.map</i>)
+    are provided in the setup. Those are a great source for learning.
+    </p>
+    
+    <p>
+    <center>
+    <img src="bsp_menu.png" width="154" height="292">
+    <br>
+    <i>JK2 BSP commands</i>
+    </center>
+    </p>
+    
+    <p>
+    You have a choice among several BSP commands, ranging from a full BSP/VIS/LIGHT (<i>FullVis</i>)
+    to only a simple BSP stage (<i>Novis (nolight)</i>). Since JKII doesn't have monitored compiling,
+    building the map and testing it in engine is not as simple. When you start a compile command, you are
+    getting something similar to the following in the console:
+    </p>
+    
+    <p>
+    <center>
+    <img src="bsp_console.png" width="943" height="144">
+    <br>
+    <i>JK2 BSP console</i>
+    </center>
+    </p>
+    
+    <p>
+    Once the DOS compile box has closed, you need to make sure the compile went well by checking the <i>junk.txt</i>
+    file. Look at your console (see above) for the location of this file. If the compile was successful, 
+    you can now load your map in the engine:
+    <ul>
+    <li>Single Player: run jk2sp.exe, toggle the console with Shift-tilda, and type <i>devmap &lt;mymap&gt;</i>
+    </li>
+    <li>Multiplayer: run jk2mp.exe, toggle the console with Shift-tilda, and type <i>devmap &lt;mymap&gt;</i>
+    </li>
+    </ul>    
+    </p>
+    
+  </p>
+  
+  </p>
+
+  <p>
+    <b><a name="help">Troubleshooting</a></b>
+    <p>
+    If the editor doesn't work correctly, make sure that your installation is not broken,
+    i.e. you have installed newer version above an older one, or you are trying to use
+    and editor binary with incompatible modules and tools (i.e. that came from other sources).    
+    </p>
+    <p>
+    Carefully examine the console of the editor for any error and warning messages. Some
+    important things are happening while the editor is starting, before the console is available,
+    this is why it is possible to have Radiant log everything to a radiant.log file (which
+    will be in <i>C:\Program Files\GtkRadiant\radiant.log</i>). You can turn logging on
+    from the preferences menu.
+    </p>
+    <p>
+    If that fails, see the links page that comes with GtkRadiant setup to find forums and help.
+    In the editor, the <b>Help</b> menu provides a number of useful shortcuts.
+    </p>
+  </p>
+  
+  <div align="center">
+  <table width="100%" cellpadding="1" cellspacing="0" border="0">
+    <tr><td bgcolor="#003366" align="right">
+      <i>Last updated: May 10, 2002 &nbsp;</i>
+    </td></tr>
+  </table>
+  </div>
+
+</tr></td></table>
+
+
+</body>
+</html>

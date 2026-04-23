@@ -1,0 +1,1635 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List
+href="Quake3%20Enhancements%20Usage%20Guide_files/filelist.xml">
+<title>Quake 3 Enhancements</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Patrick Lipo</o:Author>
+  <o:LastAuthor>riant</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>706</o:TotalTime>
+  <o:LastPrinted>2001-07-09T18:33:00Z</o:LastPrinted>
+  <o:Created>2002-04-28T23:20:00Z</o:Created>
+  <o:LastSaved>2002-04-28T23:21:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2650</o:Words>
+  <o:Characters>15105</o:Characters>
+  <o:Company>Raven Software / Activision, Inc.</o:Company>
+  <o:Lines>125</o:Lines>
+  <o:Paragraphs>35</o:Paragraphs>
+  <o:CharactersWithSpaces>17720</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman"; margin-left:0in; margin-right:0in; margin-top:0in}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	color:black;}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Arial;
+	color:black;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Arial;
+	color:black;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoTitle>Quake 3 Enhancements</p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Usage Guide<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Created:<span
+style='mso-spacerun:yes'>  </span>May 1, 2001</p>
+
+<p class=MsoNormal align=center style='text-align:center'>Printed:<span
+style='mso-spacerun:yes'>  </span><span style='mso-field-code:" TIME \\\@ \0022MMMM d\, yyyy\0022 "'><span
+style='mso-no-proof:yes'>April 28, 2002</span></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1>SurfaceSprites</h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Surfacesprites is a
+shader pass similar to those you are already familiar with.<span
+style='mso-spacerun:yes'>  </span>It shares kinship with surface textures,
+lightmaps, and other multipass texture layers.<span style='mso-spacerun:yes'> 
+</span>The main difference is that surfacesprites are not flat on the surface
+they are placed on, but rather stand up away from the surface.<span
+style='mso-spacerun:yes'>  </span>Another important distinction is that a
+single surfacesprite pass typically doesn’t generate one single image, but
+rather multiple images evenly distributed over that surface.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Example:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Take any shader:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'>textures/prague/cobblestone<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map $lightmap<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+textures/prague/cobblestone<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc GL_DST_COLOR
+GL_SRC_COLOR<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>…and add a pass to it
+like this:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+textures/colombia/grass_clump<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>surfaceSprites
+vertical 24 24 16 1024<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>ssWind 0.5<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>alphaFunc GE128<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc
+GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>depthWrite<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>As in any shader pass,
+the map is the graphic used, but in this case the graphic is not laid on top of
+the surface, it instead is distributed over it.<span style='mso-spacerun:yes'> 
+</span>The alpha and blend properties are optional as with any shader, but the
+above configuration is highly recommended for “solid” materials.<span
+style='mso-spacerun:yes'>  </span>Surfacesprites will not be placed unless the
+polygon is facing more-or-less upward (with a couple of exceptions below), so
+if cube room is textured with a surfacesprite shader, the stuff will only appear
+on the floor.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<h2>Main Command Syntax:</h2>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>surfaceSprites
+&lt;type&gt; &lt;width&gt; &lt;height&gt; &lt;density&gt; &lt;fadedist&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>&lt;type&gt;:<span style='mso-spacerun:yes'>  </span>One of three
+keywords are valid:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>vertical:</span></b><span style='font-size:10.0pt;font-family:
+Arial;color:black'> Stuff that sticks up off the ground, such as grass, reeds,
+etc.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>oriented:</span></b><span style='font-size:10.0pt;font-family:
+Arial;color:black'><span style='mso-spacerun:yes'>  </span>An image that always
+faces the user.<span style='mso-spacerun:yes'>  </span>This can be used for
+rocks, debris, whatever you want to break up a surface.<span
+style='mso-spacerun:yes'>  </span>These should stay fairly small if possible.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>effect:</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-spacerun:yes'>  </span>An image that always faces
+the user, but it grows and fades out over time.<span style='mso-spacerun:yes'> 
+</span>When the effect fades completely out, it reappears in another location.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>&lt;width&gt;:<span style='mso-spacerun:yes'>  </span>Horizontal
+size of each individual sprite, in world dimensions.<span
+style='mso-spacerun:yes'>  </span>This is the <i>base</i> width, which can be
+added to with the <u>variance</u> command below.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>&lt;height&gt;:<span style='mso-spacerun:yes'>  </span>Vertical
+size of each individual sprite, in world dimensions.<span
+style='mso-spacerun:yes'>  </span>This is the <i>base</i> height, which can be
+added to with the <u>variance</u> command below.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>&lt;density&gt;:<span style='mso-spacerun:yes'>  </span>Density
+defines the interval at which the sprites are placed, e.g. a 32 means that a
+sprite will be placed every 32 units on the ground.<span
+style='mso-spacerun:yes'>  </span>Lower equals denser.<span
+style='mso-spacerun:yes'>  </span>Note that the more dense the sprites are, the
+more slowdown you will see, so you should lower the <u>fadedist</u> if you up
+the density.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>&lt;fadedist&gt;:<span style='mso-spacerun:yes'>  </span>Fade
+distance defines the <b>minimum</b> distance at which the surfacesprites will
+be drawn in full.<span style='mso-spacerun:yes'>  </span>At a distance greater
+than this, sprites are visible, but various sprites start to fade out at
+different distances.<span style='mso-spacerun:yes'>  </span>1000 is a fair draw
+distance for normal grass-like items, smaller numbers are more appropriate for
+smaller sprites.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<h2>Optional Parameters:</h2>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>The Surfacesprites have several optional parameters that, unless
+overridden, use default values.<span style='mso-spacerun:yes'>  </span>These
+are entered as separate lines beginning with “ss”, after the initial
+surfacesprite call:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>ssFademax
+&lt;fademax&gt;</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span><u>Fade max</u> defines the <b>maximum</b> distance at
+which any Surfacesprites at all will be drawn at all.<span
+style='mso-spacerun:yes'>  </span>The sprites will fade out between the <u>fadedist</u>
+and the <u>fademax</u>.<span style='mso-spacerun:yes'>  </span>This value
+defaults to 1.33 times the fadedist.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>ssFadescale
+&lt;fadescale&gt;</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span><u>Fade scale</u> indicates a fractional amount of the
+sprite’s width that it will scale between the <u>fadedist</u> and <u>fademax</u>.<span
+style='mso-spacerun:yes'>  </span>That is, if:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>Surfacesprites vertical 8.0 8.0 32 1000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>SsFademax 1500<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>SsFadescale 1.0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>…then between distances of 1000 and 1500, this sprite of
+base width 8 will grow from 8 to 16.<span style='mso-spacerun:yes'>  </span>Of
+course after 1500, the sprites are no longer drawn (see <u>fademax</u>).<span
+style='mso-spacerun:yes'>  </span>Default for fadescale is zero.<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>ssVariance
+&lt;varwidth&gt; &lt;varheight&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span><u>Variance</u> defines a factored amount to add to the
+width and height randomly.<span style='mso-spacerun:yes'>  </span>That is, if
+the base width is 8 and the varwidth is 1.0, the width will be randomly between
+8 and 16.<span style='mso-spacerun:yes'>  </span>If the variance is not
+specified, they default to zero (e.g. every sprite is the same width and
+height).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>&lt;varwidth&gt;:<span style='mso-spacerun:yes'> 
+</span>Fraction of the base <u>width</u> of the sprite to add randomly.<span
+style='mso-spacerun:yes'>  </span>Default is zero.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>&lt;varheight&gt;:<span style='mso-spacerun:yes'> 
+</span>Fraction of the base <u>height</u> of the sprite to add randomly.<span
+style='mso-spacerun:yes'>  </span>Default is zero.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>ssHangdown<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:gray'>ssAnyangle<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span><u>Hangdown</u> is an optional keyword that when set, the
+sprites are placed on the ceiling instead of on the ground, such as for hanging
+vines.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:gray'><span style='mso-tab-count:
+1'>            </span><u>Anyangle</u> is an optional keyword that when set, the
+sprites can come out of any surface, rather than just the top.<span
+style='mso-spacerun:yes'>  </span>Mutually exclusive with hangdown.<span
+style='mso-spacerun:yes'>  </span><b>NOTE:<span style='mso-spacerun:yes'> 
+</span>FOR SPEED CONSIDERATIONS, ANYANGLE IS NOT CURRENTLY IMPLEMENTED.<u><o:p></o:p></u></b></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText>ssFaceup<span style='font-weight:normal'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Oriented and Effect
+sprites only<o:p></o:p></span></i></p>
+
+<p class=MsoBodyText><span style='font-weight:normal'><span style='mso-tab-count:
+1'>            </span><u>Faceup</u> is an optional keyword for oriented and
+effect sprites.<span style='mso-spacerun:yes'>  </span>When set, the sprites
+are placed horizontally on the ground.<span style='mso-spacerun:yes'> 
+</span>Currently the surface must be completely horizontal, or the sprites
+won’t appear.<span style='mso-spacerun:yes'>  </span>Used for stains on the
+ground, or water rings.<span style='mso-spacerun:yes'>  </span>Height is
+ignored on faceup sprites, they are always square.<span
+style='mso-spacerun:yes'>  </span>Not valid for vertical sprites.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText>ssWind &lt;wind&gt;</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Vertical and Effect
+sprites only<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><u><span style='font-size:10.0pt;font-family:Arial;
+color:black'>Wind</span></u><span style='font-size:10.0pt;font-family:Arial;
+color:black'> is an optional variable for vertical and effect sprites.<span
+style='mso-spacerun:yes'>  </span>Vertical sprites (such as grass) can wave
+according to wind settings (see below).<span style='mso-spacerun:yes'> 
+</span>Without this variable, the sprites are not affected by wind.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>&lt;wind&gt;:<span style='mso-spacerun:yes'>  </span>The <u>wind</u>
+value is how much to factor in these effects, as a multiple of the effects of
+wind.<span style='mso-spacerun:yes'>  </span>1.0 would be for limp grass
+blowing in the wind.<span style='mso-spacerun:yes'>  </span>0.5 would be more
+rigid.<span style='mso-spacerun:yes'>  </span>0.0 means the sprite sits rigidly
+upward.<span style='mso-spacerun:yes'>  </span>A rigid sprite is cheaper to
+render, so leave the wind variable out if you don’t need it!<span
+style='mso-spacerun:yes'>  </span>NOTE:<span style='mso-spacerun:yes'> 
+</span>Currently not implemented on effect sprites.<span
+style='mso-spacerun:yes'>  </span>Default is zero.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<h3>ssWindidle &lt;windidle&gt;</h3>
+
+<h5>Vertical sprites only</h5>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>The <u>wind idle</u> value is a factor from 0 to
+1.0.<span style='mso-spacerun:yes'>  </span>The higher this number is, the more
+vertical sprites will sway when there is no wind.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>&lt;windidle&gt;:<span style='mso-spacerun:yes'> 
+</span>The <u>windidle</u> value is how much to factor in these effects, and
+typically varies from 0 to 1.<span style='mso-spacerun:yes'>  </span>1.0 is
+limp grass swaying when there is no wind.<span style='mso-spacerun:yes'> 
+</span>0.25 offers very subtle movement.<span style='mso-spacerun:yes'> 
+</span>0.0 means the sprite sits rigidly upward when there is no wind.<span
+style='mso-spacerun:yes'>  </span>A rigid sprite is cheaper to render, so leave
+windidle at zero if you do not need it.<span style='mso-spacerun:yes'> 
+</span>This value defaults to zero, or to the wind value if it is set.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>ssVertSkew &lt;skew&gt;</span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+
+<h5>Vertical sprites only</h5>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>The <u>vertical skew</u> value is a random factor that is
+added to the surfacesprites to make their “base” position something other than
+vertical.<span style='mso-spacerun:yes'>  </span>The best use for this is for
+example a thin graphic for bamboo, which might stick up at strange angles.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>&lt;skew&gt;:<span style='mso-spacerun:yes'>  </span>This
+value indicates the fraction of the sprites height to add randomly to the
+sprites’ top point.<span style='mso-spacerun:yes'>  </span>For example, if a
+sprite has a height of 16, and the skew value is 1.0, then the sprite may lean
+between 16 to the left and 16 to the right.<span style='mso-spacerun:yes'> 
+</span>In exact terminology, the X and Y coordinates of the top of the sprite
+could be between a -16 and 16 offset.<span style='mso-spacerun:yes'> 
+</span>This value defaults to zero.<o:p></o:p></span></p>
+
+<h3><o:p>&nbsp;</o:p></h3>
+
+<h3>ssFXDuration &lt;duration&gt;</h3>
+
+<h5>Effect sprites only</h5>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>The <u>duration</u> value is a length of time that an
+effect sprite grows or shrinks before it disappears.<span
+style='mso-spacerun:yes'>  </span>This is how long the effect lasts before
+looping, <i>in milliseconds</i>.<span style='mso-spacerun:yes'>  </span>That
+is, 1000 equals 1 second.<span style='mso-spacerun:yes'>  </span><u>Duration</u>
+defaults to 1000 (1 second).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<h3>ssFXGrow &lt;growwidth&gt; &lt;growheight&gt;</h3>
+
+<h5>Effect sprites only</h5>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span></span></b><span style='font-size:10.0pt;font-family:
+Arial;color:black'>The <u>grow</u> value is a proportional value that indicates
+how much of the base width and height changes over an effects lifetime (i.e.
+its <u>duration</u>).<span style='mso-spacerun:yes'>  </span>A base width of 8
+and a grow value of 1.0 means the effect grows from 8 to 16.<span
+style='mso-spacerun:yes'>  </span>A negative value means it shrinks, so a
+sprite with a base width of 8 (or any base width) and a grow value of –1.0,
+will shrink to nothing over its duration.<span style='mso-spacerun:yes'> 
+</span>The default for growwidth and growheight are 0.0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>ssFXAlphaRange
+&lt;alphastart&gt; &lt;alphaend&gt;</span></b><span style='font-size:10.0pt;
+font-family:Arial;color:black'><o:p></o:p></span></p>
+
+<h5>Effect sprites only</h5>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><span style='mso-tab-count:1'>            </span>The <u>effect
+alpha range</u> sets two values between 0 and 1, that indicates what amount to
+fade out to over the course of the effect’s lifetime.<span
+style='mso-spacerun:yes'>  </span>That is, if the alpha range is 0.8 and 0.3,
+then an effect surfacesprite will start out with an alpha of 0.8 and end with
+an alpha of 0.3. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><span style='mso-tab-count:1'>            </span>&lt;alphastart&gt;:<span
+style='mso-spacerun:yes'>  </span>This indicates the alpha value that is shown
+at the start of each individual surfacesprite effect.<span
+style='mso-spacerun:yes'>  </span>The alpha transparency of a sprite will
+smoothly go from this value to the alphaend value.<span
+style='mso-spacerun:yes'>  </span>The default for the alphastart is 1.0, or
+opaque.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><span style='mso-tab-count:1'>            </span>&lt;alphaend&gt;:<span
+style='mso-spacerun:yes'>  </span>This indicates the alpha value that is shown
+at the end of an individual surfacesprite effect.<span
+style='mso-spacerun:yes'>  </span>The alpha transparency of a sprite will
+smoothly go from the alphaend value to this value.<span
+style='mso-spacerun:yes'>  </span>The default for the alphaend is 0.0, or fully
+transparent. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>SsFXWeather<o:p></o:p></span></b></p>
+
+<h5>Effect sprites only</h5>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span><u>Weather</u> is an optional keyword for effect
+sprites.<span style='mso-spacerun:yes'>  </span>If this keyword is present,
+then the density of the sprites is reliant on the <b>r_surfaceWeather</b> cvar
+as detailed below.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>--------------------------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>There are a few cvars
+that this feature uses right now:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_surfaceSprites 0:</span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span
+style='mso-spacerun:yes'>  </span>Turns surfacesprites off.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_surfaceSprites 1:</span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span
+style='mso-spacerun:yes'>  </span>Turns surfacesprites on.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_surfaceSprites 3:</span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span
+style='mso-spacerun:yes'>  </span>Reports how many are being drawn per frame<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_windSpeed
+&lt;speed&gt;:</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-spacerun:yes'>  </span>Sets the windspeed.<span
+style='mso-spacerun:yes'>  </span>Defaults to 0.<span
+style='mso-spacerun:yes'>  </span>This value is ignored if the weather system
+is present, as the weather wind will take control.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_windAngle
+&lt;angle&gt;:</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-spacerun:yes'>  </span>Sets the angle that the
+wind blows at.<span style='mso-spacerun:yes'>  </span>Defaults to 0.<span
+style='mso-spacerun:yes'>  </span>This value is ignored if the weather system
+is present, as the weather wind will take control.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_windDampFactor
+&lt;factor&gt;:</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-spacerun:yes'>  </span>Sets how quickly the wind
+responds to changes.<span style='mso-spacerun:yes'>  </span>Defaults to 0.1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'>r_surfaceWeather
+&lt;value&gt;:</span></b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-spacerun:yes'>  </span>Sets the amount of
+weather-oriented effects to display.<span style='mso-spacerun:yes'> 
+</span>Defaults to 1.0.<span style='mso-spacerun:yes'>  </span>This value is
+typically 0 to 1, representing 0-100% of the weather, so in the case of rain
+splashes, 0.4 is a light rain.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>--------------------------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>You must also add a few
+elements to make the surface light properly:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>First you cannot use
+lightmaps, the surface must be instead vertex lit, else the light will look
+fullbright.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>q3map_nolightmap<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>q3map_onlyvertexlighting<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>If the polygon surfaces
+are large, you will not see the sprites fade properly.<span
+style='mso-spacerun:yes'>  </span>You must force the BSP to break up the
+surface with a command like this:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>q3map_tesssize<span style='mso-tab-count:1'> </span>256<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>--------------------------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>The sprites or graphics
+that it uses are hard-alpha channeled images of reasonable resolution.<span
+style='mso-spacerun:yes'>  </span>They should have sides (e.g. not tile).<span
+style='mso-spacerun:yes'>  </span>Grass is done with “clump” images.<span
+style='mso-spacerun:yes'>  </span>A wide, flat edge at the bottom of the sprite
+is not usually desirable.<span style='mso-spacerun:yes'>  </span>It is highly
+recommended that the sprites have the same overall coloring as the ground
+texture.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>The system currently
+randomly flips any surfacesprites horizontally for variety.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>You can use any blend
+mode you wish, so if you want the sprites to be additive, simply set <b>blendfunc
+GL_ONE GL_ONE</b>.<span style='mso-spacerun:yes'>  </span>Beware of highly
+transparent objects if the sprites are very tall (e.g. vertical surfacesprites
+such as tall grass).<span style='mso-spacerun:yes'>  </span>The transparency
+will reveal sorting issues, and fogged sprites will look especially
+strange.<span style='mso-spacerun:yes'>  </span>So for tall “in your face” sprites
+such as grass, use a hard-edged alpha mask and an alphatest setting such as <b>alphafunc
+GE128</b>, or even crisper like <b>alphafunc GE192</b> (a new alphafunc
+recently added).<span style='mso-spacerun:yes'>  </span>However, there is a
+tradeoff.<span style='mso-spacerun:yes'>  </span>When the alphafunc is set
+higher, the sprites will not be able to fade as smoothly, and will appear to
+“pop” in a bit more.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>If you want additional
+sprites in a single texture, you can add in another pass, but don’t abuse it or
+your overtaxed machine will punish you.<span style='mso-spacerun:yes'> 
+</span>If you use the exact same density on a second pass, the second set of
+sprites will be directly on top of the first, which can be useful.<span
+style='mso-spacerun:yes'>  </span>If you want roughly the same density but
+don’t wish for this, simply add or subtract a small amount from the density, the
+overall effect will be the same.<span style='mso-spacerun:yes'>  </span>BE
+CAREFUL WITH THIS SYSTEM, BECAUSE THE SPRITES AIN’T FREE!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>In the future, there
+will be adjustments for this feature for scalability, namely, if the user has a
+weaker machine, the sprites will be less in number and fade out quicker.<span
+style='mso-spacerun:yes'>  </span>The very worst machines might have absolutely
+no surfacesprites at all.<span style='mso-spacerun:yes'>  </span>So, don’t rely
+on this for 100% of a level’s appearance, so for example you might want to
+leave in a few grass models just in case.<span style='mso-spacerun:yes'> 
+</span>You can turn off the sprites with the cvar above to see how it looks.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>If you want to have a
+texture covered with sprites in some places, not in others (such as raindrops
+outdoors but not inside), two shaders should be made with the same graphic, but
+one not possessing the surfacesprite pass.<span style='mso-spacerun:yes'> 
+</span>I’d suggest a clever naming convention for this.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Weather such as rain and
+snow will eventually be on a trigger rather than a cvar.<span
+style='mso-spacerun:yes'>  </span>This, however, requires some coordination
+with Rick and Jeff D.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>--------------------------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Currently surfacesprites
+are NOT supported in shaderEd.<span style='mso-spacerun:yes'>  </span>This is
+important, because if a shader with surfacesprites is loaded up in shaderEd,
+the surfacesprites command will be eliminated when it is saved out again, destroying
+the surfacesprites effect.<span style='mso-spacerun:yes'>  </span>For now,
+these files must be edited by hand, and you should not put surfacesprites in
+typically used shader files.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>--------------------------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Shader examples:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Grasses that blow in the
+wind:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>textures/test/grnd01c_sprites<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>qer_editorimage<span
+style='mso-tab-count:1'>        </span>textures/kamchatka/grnd01c<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_material<span
+style='mso-tab-count:1'> </span>Gravel<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_nolightmap<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_onlyvertexlighting<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+textures/kamchatka/grnd01c<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span><span
+style='mso-spacerun:yes'>  </span>blendFunc GL_DST_COLOR GL_ZERO<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map models/objects/colombia/jungle/tall_grass<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>surfaceSprites
+vertical 16 32 48 1000 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>            </span>ssVariance 1.0
+2.0 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>            </span>ssWind 1.0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc
+GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>alphaFunc GE128<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>depthWrite<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Rain splashes on water:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>textures/colombia/rain_water<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>qer_editorimage<span
+style='mso-tab-count:1'>        </span>textures/colombia/water_terrain<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_material<span
+style='mso-tab-count:1'> </span>Water<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_nolightmap<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_onlyvertexlighting<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_tesssize<span
+style='mso-tab-count:1'> </span>256<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+textures/colombia/water_terrain<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc GL_ONE
+GL_ONE_MINUS_SRC_ALPHA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>depthWrite<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>rgbGen exactVertex<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>alphaGen const 0.9<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>tcMod turb 0 0.08
+0.04 0.08<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>tcMod scroll -0.05
+-0.001<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>tcMod scale 3 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+textures/colombia/water_terrain2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span><span
+style='mso-spacerun:yes'>    </span>blendFunc GL_SRC_ALPHA
+GL_ONE_MINUS_SRC_ALPHA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>rgbGen exactVertex<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>tcMod turb 0 0.08
+0.04 0.08<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>tcMod scale 3 3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<span style='mso-tab-count:
+1'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>map
+gfx/sprites/rainhit<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>surfaceSprites effect
+2.5 2.5 16 400 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>            </span>ssFXDuration 135
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>           </span><span
+style='mso-spacerun:yes'> </span>ssFXGrow 6 6 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>            </span>ssVariance 1.0
+0.75 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>            </span>ssFXWeather<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc GL_ONE
+GL_ONE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<span style='mso-tab-count:
+1'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>map
+gfx/sprites/rainring<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>surfaceSprites effect
+2.0 2.0 28 350 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>      </span><span
+style='mso-tab-count:1'>  </span><span
+style='mso-spacerun:yes'>    </span>ssFXDuration 220 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'><span style='mso-spacerun:yes'>   
+</span>ssFXGrow 2.5 2.5 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'><span style='mso-spacerun:yes'>   
+</span>ssFaceup <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'><span style='mso-spacerun:yes'>   
+</span>ssVariance 2.0 1.0 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'><span style='mso-spacerun:yes'>   
+</span>ssWeather<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span><span style='mso-tab-count:
+1'>    </span>blendFunc GL_ONE GL_ONE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Random debris on the
+ground:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>textures/common/ground<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'>qer_editorimage<span style='mso-tab-count:
+1'>        </span>textures/colombia/ground_jungle<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'>q3map_material<span style='mso-tab-count:
+1'> </span>gravel<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_nolightmap<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>q3map_onlyvertexlighting<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map textures/colombia/ground_jungle<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc GL_ONE
+GL_ZERO<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+gfx/sprites/rock1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>surfaceSprites
+oriented 4 4 80 256 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'><span style='mso-spacerun:yes'>   
+</span>ssVariance 0.25 0.0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc
+GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>alphaFunc GE128<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>depthWrite<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>map
+gfx/sprites/rock2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-tab-count:1'>        </span>surfaceSprites
+oriented 2 2 92 200 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Courier New";color:black'><span style='mso-spacerun:yes'>   
+</span>ssVariance 0.25 0.0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>blendFunc
+GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>alphaFunc GE128<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>        </span>depthWrite<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New";
+color:black'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>--------------------------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<h1>Weather </h1>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>All weather is started
+and controlled with <b>r_we</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Snow:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Start a snow effect:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow init &lt;particles&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Remove the snow effect:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow remove<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the snow alpha
+transparency:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow alpha &lt;float&gt;<span style='mso-tab-count:2'>                      </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>default: 0.09<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the area around the
+player the snow covers:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow spread ( minX minY minZ ) ( maxX maxY maxZ )<span
+style='mso-tab-count:3'>                            </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>default: ( -600 -600 -200 ) ( 600 600 250 )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the random range
+that sets the speed the snow falls:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow velocity ( minX minY minZ ) ( maxX maxY maxZ )<span
+style='mso-tab-count:3'>                           </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>default: ( -15 -15 -20 ) ( 15 15 -70 )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set an area of snow
+blowing:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='mso-tab-count:1'>            </span>r_we snow
+wind ( windOriginX windOriginY windOriginZ ) ( windVelocityX windVelocityY
+windVelocityZ ) ( sizeX sizeY sizeZ )</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set snow blowing data:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow blowing duration &lt;int&gt;<span style='mso-tab-count:
+7'>                                                                               </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow blowing low &lt;int&gt;<span style='mso-tab-count:8'>                                                                                      </span></span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+6'>                                                                        </span>default:
+3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow blowing velocity ( min max )<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:2'>                        </span>default:
+( 30 70 )<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='mso-tab-count:1'>            </span>r_we snow
+blowing size ( minX minY minZ )</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:3'>                                    </span>default:
+( 1000 300 300 )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Start a fog effect in
+the snow:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we snow fog<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the density of the
+snow fog:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we snow fog density &lt;alpha&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:1'>            </span>default: 0.3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Rain:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Start a rain effect:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we rain init &lt;particles&gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Remove the rain effect:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we rain remove<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Add a fog effect to the
+rain:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we rain fog<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the density of the
+rain fog:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'>r_we rain fog density &lt;alpha&gt;<span style='mso-tab-count:
+8'>                                                                                      </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:1'>            </span>default: 0.3<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the range of speeds
+at which the rain falls:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='mso-tab-count:1'>            </span>r_we rain
+fall ( minVelocity maxVelocity )</p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:1'>            </span>default: ( -60
+-50 )<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the area around the
+player that the rain falls in:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='mso-tab-count:1'>            </span>r_we rain
+spread ( radius height )<span style='mso-tab-count:1'>        </span></p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:1'>            </span>default: ( 20 20
+)<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the alpha
+transparency of the raindrops:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we rain alpha &lt;float&gt;<span style='mso-tab-count:
+4'>                                                </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:2'>                        </span>default:
+0.1<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the height (length)
+of the raindrops:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we rain height &lt;float&gt;<span style='mso-tab-count:
+2'>                       </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:2'>                        </span>default:
+5<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Set the slope at which
+the rain falls (in the current wind direction):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we rain angle &lt;float&gt;<span style='mso-tab-count:
+1'>            </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;font-family:Arial;
+color:black'><span style='mso-tab-count:2'>                        </span>default:
+1.0<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Debug:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'><span style='mso-tab-count:
+1'>            </span>r_we debug wind<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
