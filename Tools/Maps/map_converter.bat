@@ -20,7 +20,7 @@ Write-Host "| - Load Q3map2 with custom params     |"
 Write-Host "|______________________________________|`n"
 
 # Path to the temp file
-$tempFilePath = "$env:TEMP\DskMods-lastSelectedFolder.txt"
+$tempFilePath = "$env:TEMP\DskMods-mapConverterLast.txt"
 
 # Ensure the required assembly is loaded
 Add-Type -AssemblyName System.Windows.Forms
