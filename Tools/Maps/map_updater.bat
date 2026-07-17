@@ -101,13 +101,13 @@ if (Test-Path $tempFilePath2)
     else
     {
         $folderBrowser2.SelectedPath = $mapsRoot
-        $folderBrowser2.Description = "Select the Target Map folder"
+        $folderBrowser2.Description = "Select the Target Map folder (Click on Maps to open the list)"
     }
 }
 else
 {
     $folderBrowser2.SelectedPath = $mapsRoot
-    $folderBrowser2.Description = "Select the Target Map folder"
+    $folderBrowser2.Description = "Select the Target Map folder (Click on Maps to open the list)"
 }
 
 if ($folderBrowser2.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK)
