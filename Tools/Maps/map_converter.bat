@@ -28,16 +28,20 @@ Add-Type -AssemblyName System.Windows.Forms
 # Create a new FolderBrowserDialog object
 $folderBrowser = New-Object System.Windows.Forms.FolderBrowserDialog
 
-# Set the description text
-$folderBrowser.Description = "Select the GameData folder"
-
 # If the temp file exists, read the previous folder
 if (Test-Path -Path $tempFilePath) {
-    $previousFolder = Get-Content -Path $tempFilePath -Raw
-	$previousFolder = $previousFolder.Trim()
+    $previousFolder = (Get-Content -Path $tempFilePath -Raw).Trim()
+
     if (Test-Path -Path $previousFolder) {
         $folderBrowser.SelectedPath = $previousFolder
+        $folderBrowser.Description = "Select the GameData folder (Last: $previousFolder)"
     }
+    else {
+        $folderBrowser.Description = "Select the GameData folder"
+    }
+}
+else {
+    $folderBrowser.Description = "Select the GameData folder"
 }
 
 # Show the dialog to select a folder

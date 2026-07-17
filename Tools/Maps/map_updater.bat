@@ -1,0 +1,174 @@
+<# :
+:: PowerShell init
+@echo off
+powershell /nologo /noprofile /command ^ "&{[ScriptBlock]::Create((cat """%~f0""") -join [Char[]]10).Invoke(@(&{$args}%*))}"
+exit /b
+#>
+
+# Code init
+Write-Host "________________________________________"
+Write-Host "|        ___ _____      _   ___        |"
+Write-Host "|       |  _|  __ \    | | |_  |       |"
+Write-Host "|  __  _| | | |  | |___| | __| |_  __  |"
+Write-Host "|  \ \/ / | | |  | / __| |/ /| \ \/ /  |"
+Write-Host "|   >  <| | | |__| \__ \   < | |>  <   |"
+Write-Host "|  /_/\_\ |_|_____/|___/_|\_\| /_/\_\  |"
+Write-Host "|       |___|              |___|       |"
+Write-Host "|                                      |"
+Write-Host "| - Map Updater Tool                   |"
+Write-Host "| - Synchronize files to Git tools     |"
+Write-Host "|______________________________________|`n"
+
+$tempFilePath = "$env:TEMP\DskMods-mapUpdaterLast.txt"
+$tempFilePath2 = "$env:TEMP\DskMods-mapUpdaterTarget.txt"
+
+Add-Type -AssemblyName System.Windows.Forms
+
+#----------------------------------------------------------
+# Seleccionar GameData
+#----------------------------------------------------------
+
+$folderBrowser = New-Object System.Windows.Forms.FolderBrowserDialog
+
+if (Test-Path $tempFilePath)
+{
+    $previousFolder = (Get-Content $tempFilePath -Raw).Trim()
+
+    if (Test-Path $previousFolder)
+    {
+        $folderBrowser.SelectedPath = $previousFolder
+        $folderBrowser.Description = "Select the GameData folder (Last: $previousFolder)"
+    }
+    else
+    {
+        $folderBrowser.Description = "Select the GameData folder"
+    }
+}
+else
+{
+    $folderBrowser.Description = "Select the GameData folder"
+}
+
+if ($folderBrowser.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK)
+{
+    Write-Host "Folder selection cancelled."
+    Write-Host -NoNewLine "Press any key to continue..." -fo Yellow; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+    exit
+}
+
+$gameData = $folderBrowser.SelectedPath
+Set-Content $tempFilePath $gameData
+
+#----------------------------------------------------------
+# Calcular carpeta Maps del proyecto
+#----------------------------------------------------------
+
+$scriptFolder = Get-Location
+
+# Tools/Maps/map_updater.bat
+# subir dos niveles -> raiz
+$projectRoot = Resolve-Path (Join-Path $scriptFolder "..\..")
+
+$mapsRoot = Join-Path $projectRoot "Maps"
+
+if (!(Test-Path $mapsRoot))
+{
+    Write-Host ""
+    Write-Host "ERROR:"
+    Write-Host "Could not find:"
+    Write-Host $mapsRoot
+    Write-Host -NoNewLine "Press any key to continue..." -fo Yellow; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+    exit
+}
+
+#----------------------------------------------------------
+# Seleccionar carpeta del mapa
+#----------------------------------------------------------
+
+$folderBrowser2 = New-Object System.Windows.Forms.FolderBrowserDialog
+
+if (Test-Path $tempFilePath2)
+{
+    $previousTarget = (Get-Content $tempFilePath2 -Raw).Trim()
+
+    if (Test-Path $previousTarget)
+    {
+        $folderBrowser2.SelectedPath = $previousTarget
+		$lastMap = Split-Path $previousTarget -Leaf
+		$folderBrowser2.Description = "Select the Target Map folder (Last: $lastMap)"
+        # $folderBrowser2.Description = "Select the Target Map folder (Last: $previousTarget)"
+    }
+    else
+    {
+        $folderBrowser2.SelectedPath = $mapsRoot
+        $folderBrowser2.Description = "Select the Target Map folder"
+    }
+}
+else
+{
+    $folderBrowser2.SelectedPath = $mapsRoot
+    $folderBrowser2.Description = "Select the Target Map folder"
+}
+
+if ($folderBrowser2.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK)
+{
+    Write-Host "Map selection cancelled."
+    Write-Host -NoNewLine "Press any key to continue..." -fo Yellow; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+    exit
+}
+
+$projectMap = $folderBrowser2.SelectedPath
+Set-Content $tempFilePath2 $projectMap
+$mapName = Split-Path $projectMap -Leaf
+
+#----------------------------------------------------------
+# Carpeta origen
+#----------------------------------------------------------
+
+$source = Join-Path $gameData "base\$mapName"
+
+if (!(Test-Path $source))
+{
+    Write-Host ""
+    Write-Host "ERROR:"
+    Write-Host "Source folder does not exist:"
+    Write-Host $source
+    Write-Host -NoNewLine "Press any key to continue..." -fo Yellow; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+    exit
+}
+
+#----------------------------------------------------------
+# Confirmación
+#----------------------------------------------------------
+
+Write-Host ""
+Write-Host "Source folder:"
+Write-Host $source
+Write-Host ""
+Write-Host "Destination folder:"
+Write-Host $projectMap
+Write-Host ""
+Write-Host "This will make destination folder identical to source."
+Write-Host -NoNewLine "Press any key to continue..." -fo Red; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+
+#----------------------------------------------------------
+# Sincronizar
+#----------------------------------------------------------
+
+robocopy `
+    "$source" `
+    "$projectMap" `
+    /MIR `
+    /R:1 `
+    /W:1 `
+    /NFL `
+    /NDL `
+    /NJH `
+    /NJS `
+    /NP
+
+Clear-Host
+Write-Host "Files updated successfully!"
+Write-Host ""
+Write-Host "Please review Git (SourceTree) and prepare the changes for Commit."
+Write-Host -NoNewLine "Press any key to continue..." -fo Yellow; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
