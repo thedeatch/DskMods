@@ -125,7 +125,7 @@ $mapName = Split-Path $projectMap -Leaf
 # Carpeta origen
 #----------------------------------------------------------
 
-$source = Join-Path $gameData "base\$mapName"
+$source = Join-Path $gameData "base"
 
 if (!(Test-Path $source))
 {
@@ -155,10 +155,29 @@ Write-Host -NoNewLine "Press any key to continue..." -fo Red; $Host.UI.RawUI.Rea
 # Sincronizar
 #----------------------------------------------------------
 
+# Mirror all folders
 robocopy `
     "$source" `
     "$projectMap" `
+    * `
     /MIR `
+    /XD ".git" `
+    /XF *.pk3 *.cfg *.log *.ini *.dll *.exe `
+    /R:1 `
+    /W:1 `
+    /NFL `
+    /NDL `
+    /NJH `
+    /NJS `
+    /NP
+
+# Mirror root TXT files
+robocopy `
+    "$source" `
+    "$projectMap" `
+    *.txt `
+    /MIR `
+    /LEV:1 `
     /R:1 `
     /W:1 `
     /NFL `
