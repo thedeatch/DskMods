@@ -162,7 +162,7 @@ robocopy `
     * `
     /MIR `
     /XD ".git" `
-    /XF *.pk3 *.cfg *.log *.ini *.dll *.exe *.lnk `
+    /XF *.pk3 *.cfg *.log *.ini *.dll *.exe *.lnk *.zip *.7z *.rar `
     /R:1 `
     /W:1 `
     /NFL `
