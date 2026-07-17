@@ -220,3 +220,65 @@ textures/chicagostreets_jo/szico_chicagopcstand
         tcGen environment
     }
 }
+textures/jka/yavin/stone_vertex
+{
+// q3map_shadeangle	120
+
+	qer_editorimage	textures/jka/yavin/stone
+	q3map_nolightmap
+	q3map_nonplanar
+	q3map_splotchfix
+	q3map_onlyvertexlighting
+    {
+        map textures/jka/yavin/stone
+        rgbGen vertex
+    }
+}
+textures/jka/common/dark_dust
+{
+	qer_editorimage	textures/jka/common/gradient
+	qer_trans	0.5
+	surfaceparm	noimpact
+	surfaceparm	nomarks
+	surfaceparm	nonsolid
+	surfaceparm	nonopaque
+	surfaceparm	trans
+	q3map_nolightmap
+    {
+        clampmap textures/jka/common/gradient
+        blendFunc GL_ONE GL_ONE
+        rgbGen const ( 0.141176 0.141176 0.141176 )
+    }
+}
+textures/jka/hoth/h_floor_02
+{
+	q3map_material	HollowMetal
+    {
+        map textures/jka/common/environ1
+        tcGen environment
+    }
+    {
+        map textures/jka/hoth/h_floor_02
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+    }
+    {
+        map $lightmap
+        blendFunc GL_DST_COLOR GL_ZERO
+    }
+}
+textures/jka/byss/stairs_front
+{
+    {
+        map $lightmap
+    }
+    {
+        map textures/jka/byss/stairs_front
+        blendFunc GL_DST_COLOR GL_ZERO
+    }
+    {
+        map textures/jka/byss/stairs_front_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
