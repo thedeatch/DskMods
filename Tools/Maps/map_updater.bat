@@ -155,28 +155,36 @@ Write-Host -NoNewLine "Press any key to continue..." -fo Red; $Host.UI.RawUI.Rea
 # Sincronizar
 #----------------------------------------------------------
 
-# Mirror all folders
-robocopy `
-    "$source" `
-    "$projectMap" `
-    * `
-    /MIR `
-    /XD ".git" `
-    /XF *.pk3 *.cfg *.log *.ini *.dll *.exe *.lnk *.zip *.7z *.rar `
-    /R:1 `
-    /W:1 `
-    /NFL `
-    /NDL `
-    /NJH `
-    /NJS `
-    /NP
+# Eliminar del destino cualquier carpeta que ya no exista en el origen
+Get-ChildItem $projectMap -Directory | ForEach-Object {
 
-# Mirror root TXT files
+    if (!(Test-Path (Join-Path $source $_.Name)))
+    {
+        Remove-Item $_.FullName -Recurse -Force
+    }
+}
+
+# Sincronizar cada carpeta existente en el origen
+Get-ChildItem $source -Directory | ForEach-Object {
+
+    robocopy `
+        $_.FullName `
+        (Join-Path $projectMap $_.Name) `
+        /MIR `
+        /R:1 `
+        /W:1 `
+        /NFL `
+        /NDL `
+        /NJH `
+        /NJS `
+        /NP | Out-Null
+}
+
+# Sincronizar únicamente los TXT de la raíz
 robocopy `
     "$source" `
     "$projectMap" `
     *.txt `
-    /MIR `
     /LEV:1 `
     /R:1 `
     /W:1 `
@@ -184,7 +192,16 @@ robocopy `
     /NDL `
     /NJH `
     /NJS `
-    /NP
+    /NP | Out-Null
+
+# Eliminar TXT del destino que ya no existan en el origen
+Get-ChildItem $projectMap -File -Filter *.txt | ForEach-Object {
+
+    if (!(Test-Path (Join-Path $source $_.Name)))
+    {
+        Remove-Item $_.FullName -Force
+    }
+}
 
 Clear-Host
 Write-Host "Files updated successfully!"
