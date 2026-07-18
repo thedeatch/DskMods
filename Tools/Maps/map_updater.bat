@@ -25,6 +25,22 @@ $tempFilePath2 = "$env:TEMP\DskMods-mapUpdaterTarget.txt"
 Add-Type -AssemblyName System.Windows.Forms
 
 #----------------------------------------------------------
+# Seleccionar modo
+#----------------------------------------------------------
+
+Write-Host "Select operation:"
+Write-Host ""
+Write-Host "1) Upload updates to Cloud (Git)"
+Write-Host "2) Download updates from Cloud (Git)"
+Write-Host ""
+
+do
+{
+    $syncMode = Read-Host "Option"
+
+} until ($syncMode -eq "1" -or $syncMode -eq "2")
+
+#----------------------------------------------------------
 # Seleccionar GameData
 #----------------------------------------------------------
 
@@ -127,6 +143,27 @@ $mapName = Split-Path $projectMap -Leaf
 
 $source = Join-Path $gameData "base"
 
+#----------------------------------------------------------
+# Determinar dirección de sincronización
+#----------------------------------------------------------
+
+if ($syncMode -eq "1")
+{
+    # Local -> Cloud
+    $syncSource = $source
+    $syncDestination = $projectMap
+
+    $operationText = "Upload updates to Cloud"
+}
+else
+{
+    # Cloud -> Local
+    $syncSource = $projectMap
+    $syncDestination = $source
+
+    $operationText = "Download updates from Cloud"
+}
+
 if (!(Test-Path $source))
 {
     Write-Host ""
@@ -141,13 +178,17 @@ if (!(Test-Path $source))
 # Confirmación
 #----------------------------------------------------------
 
+Write-Host $operationText
 Write-Host ""
+
 Write-Host "Source folder:"
-Write-Host $source
+Write-Host $syncSource
 Write-Host ""
+
 Write-Host "Destination folder:"
-Write-Host $projectMap
+Write-Host $syncDestination
 Write-Host ""
+
 Write-Host "This will make destination folder identical to source."
 Write-Host -NoNewLine "Press any key to continue..." -fo Red; $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 
@@ -156,20 +197,20 @@ Write-Host -NoNewLine "Press any key to continue..." -fo Red; $Host.UI.RawUI.Rea
 #----------------------------------------------------------
 
 # Eliminar del destino cualquier carpeta que ya no exista en el origen
-Get-ChildItem $projectMap -Directory | ForEach-Object {
+Get-ChildItem $syncDestination -Directory | ForEach-Object {
 
-    if (!(Test-Path (Join-Path $source $_.Name)))
+    if (!(Test-Path (Join-Path $syncSource $_.Name)))
     {
         Remove-Item $_.FullName -Recurse -Force
     }
 }
 
 # Sincronizar cada carpeta existente en el origen
-Get-ChildItem $source -Directory | ForEach-Object {
+Get-ChildItem $syncSource -Directory | ForEach-Object {
 
     robocopy `
         $_.FullName `
-        (Join-Path $projectMap $_.Name) `
+        (Join-Path $syncDestination $_.Name) `
         /MIR `
         /R:1 `
         /W:1 `
@@ -182,8 +223,8 @@ Get-ChildItem $source -Directory | ForEach-Object {
 
 # Sincronizar únicamente los TXT de la raíz
 robocopy `
-    "$source" `
-    "$projectMap" `
+    "$syncSource" `
+    "$syncDestination" `
     *.txt `
     /LEV:1 `
     /R:1 `
@@ -195,9 +236,9 @@ robocopy `
     /NP | Out-Null
 
 # Eliminar TXT del destino que ya no existan en el origen
-Get-ChildItem $projectMap -File -Filter *.txt | ForEach-Object {
+Get-ChildItem $syncDestination -File -Filter *.txt | ForEach-Object {
 
-    if (!(Test-Path (Join-Path $source $_.Name)))
+    if (!(Test-Path (Join-Path $syncSource $_.Name)))
     {
         Remove-Item $_.FullName -Force
     }
