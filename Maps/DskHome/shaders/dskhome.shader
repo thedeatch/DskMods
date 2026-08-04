@@ -282,21 +282,20 @@ textures/jka/byss/stairs_front
         rgbGen identity
     }
 }
-textures/tileables/BRWfireymarble
-
+textures/rk_home/BRWfireymarble
 {
-	qer_editorimage	textures/tileables/BRWfireymarble
+	qer_editorimage	textures/rk_home/BRWfireymarble
     {
         map $lightmap
         tcGen lightmap
     }
     {
-        map textures/tileables/BRWfireymarble
+        map textures/rk_home/BRWfireymarble
         blendFunc GL_DST_COLOR GL_ZERO
         rgbGen identity
     }
     {
-        map textures/tileables/BRWfirey
+        map textures/rk_home/BRWfirey
         blendFunc GL_ONE GL_ONE_MINUS_SRC_COLOR
         rgbGen identity
         tcGen environment
