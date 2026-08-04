@@ -302,3 +302,54 @@ textures/tileables/BRWfireymarble
         tcGen environment
     }
 }
+textures/grflawv2/s_rock4
+{
+	q3map_nonplanar
+ 	q3map_shadeangle 95
+ 	qer_editorimage textures/grflawv2/s_rock4
+ 	{
+ 		map $lightmap
+ 		rgbGen identity
+ 	}
+ 	{
+ 		map textures/grflawv2/s_rock4
+ 		blendFunc filter
+ 	}
+}
+textures/grflawv2/s_rock6
+{
+    {
+        map $lightmap
+    }
+    {
+        map textures/grflawv2/s_rock6
+        blendFunc GL_DST_COLOR GL_ZERO
+    }
+    {
+        map textures/grflawv2/s_rock6_glow
+        blendFunc GL_ONE GL_ONE
+        rgbGen wave sin 0.3 0.6 0.2 0.6
+    }
+}
+textures/xyz/decals/cobweb_image
+{
+	surfaceparm	nonsolid
+	q3map_nolightmap
+	cull	twosided
+	deformvertexes	wave	50 sin 0 2.5 0 0.35
+    {
+        map textures/xyz/decals/cobweb
+        blendFunc GL_SRC_ALPHA GL_ONE
+    }
+}
+textures/xyz/decals/cobweb2_image
+{
+	surfaceparm	nonsolid
+	q3map_nolightmap
+	cull	twosided
+	deformvertexes	wave	50 sin 0 2.5 0 0.35
+    {
+        map textures/xyz/decals/cobweb2
+        blendFunc GL_SRC_ALPHA GL_ONE
+    }
+}
