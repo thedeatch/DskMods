@@ -98096,9 +98096,9 @@ brushDef
 // entity 570
 {
 "classname" "target_print"
-"origin" "-1376 -1744 -608"
+"origin" "-1398 -1773 -588"
 "targetname" "miembrodsk1"
-"message" "aqui yace DeaTch"
+"message" "Aqui yace Dea^1T^7ch"
 }
 // entity 571
 {
@@ -98119,25 +98119,6 @@ brushDef
 }
 }
 // entity 572
-{
-"classname" "func_usable"
-"spawnflags" "72"
-"target" "miembrodsk1"
-"wait" "1"
-// brush 0
-{
-brushDef
-{
-( -1383 -1769 -605 ) ( -1383 -1777 -605 ) ( -1394 -1769 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/clip 0 0 0
-( -1383 -1762 -605 ) ( -1394 -1762 -605 ) ( -1383 -1762 -606 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/clip 0 0 0
-( -1373 -1769 -605 ) ( -1373 -1769 -606 ) ( -1373 -1777 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/clip 0 0 0
-( -1394 -1777 -618 ) ( -1383 -1777 -618 ) ( -1394 -1769 -618 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/clip 0 0 0
-( -1394 -1788 -606 ) ( -1394 -1788 -605 ) ( -1383 -1788 -606 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/clip 0 0 0
-( -1420 -1777 -606 ) ( -1420 -1769 -606 ) ( -1420 -1777 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/clip 0 0 0
-}
-}
-}
-// entity 573
 {
 "classname" "func_breakable"
 "health" "200"
@@ -98298,7 +98279,7 @@ brushDef
 }
 }
 }
-// entity 574
+// entity 573
 {
 "classname" "func_breakable"
 "health" "200"
@@ -98315,7 +98296,7 @@ brushDef
 }
 }
 }
-// entity 575
+// entity 574
 {
 "classname" "func_breakable"
 "health" "200"
@@ -98332,43 +98313,43 @@ brushDef
 }
 }
 }
-// entity 576
+// entity 575
 {
 "classname" "item_binoculars"
 "origin" "-202 -2752.5 -558"
 "angle" "90"
 }
-// entity 577
+// entity 576
 {
 "classname" "item_binoculars"
 "origin" "-205 -2634 -561.5"
 "angle" "90"
 }
-// entity 578
+// entity 577
 {
 "classname" "item_binoculars"
 "origin" "-342 -2494.5 -482"
 "angle" "90"
 }
-// entity 579
+// entity 578
 {
 "classname" "item_binoculars"
 "origin" "-286.5 -2495.5 -482"
 "angle" "90"
 }
-// entity 580
+// entity 579
 {
 "classname" "item_shield"
 "origin" "-285 -2505 -564.5"
 "angle" "90"
 }
-// entity 581
+// entity 580
 {
 "classname" "item_shield"
 "origin" "-358.5 -2505 -564.5"
 "angle" "90"
 }
-// entity 582
+// entity 581
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98408,7 +98389,7 @@ brushDef
 }
 }
 }
-// entity 583
+// entity 582
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98448,7 +98429,7 @@ brushDef
 }
 }
 }
-// entity 584
+// entity 583
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98470,7 +98451,7 @@ brushDef
 }
 }
 }
-// entity 585
+// entity 584
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98492,7 +98473,7 @@ brushDef
 }
 }
 }
-// entity 586
+// entity 585
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98514,7 +98495,7 @@ brushDef
 }
 }
 }
-// entity 587
+// entity 586
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98537,7 +98518,7 @@ brushDef
 }
 }
 }
-// entity 588
+// entity 587
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98560,7 +98541,7 @@ brushDef
 }
 }
 }
-// entity 589
+// entity 588
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98583,7 +98564,7 @@ brushDef
 }
 }
 }
-// entity 590
+// entity 589
 {
 "classname" "func_breakable"
 "_lightmapscale" "2"
@@ -98605,4 +98586,49 @@ brushDef
 ( -220.3767360849 -1860.9628496629 -375.801816919 ) ( -205.0127895286 -1855.5830065849 -375.8819014781 ) ( -224.8024023944 -1846.4319227418 -248.7063322566 ) ( ( 0.0625 0 0.625 ) ( 0 -0.0460721329 0.7122641802 ) ) yavin/temple_stonea 134217728 0 0
 }
 }
+}
+// entity 590
+{
+"classname" "trigger_multiple"
+"spawnflags" "257"
+"wait" "1"
+"target" "miembrodsk1"
+// brush 0
+{
+brushDef
+{
+( -1384 -1767 -605 ) ( -1384 -1775 -605 ) ( -1395 -1767 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1384 -1760 -605 ) ( -1395 -1760 -605 ) ( -1384 -1760 -606 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1374 -1767 -605 ) ( -1374 -1767 -606 ) ( -1374 -1775 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1395 -1775 -618 ) ( -1384 -1775 -618 ) ( -1395 -1767 -618 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1395 -1786 -606 ) ( -1395 -1786 -605 ) ( -1384 -1786 -606 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1421 -1775 -606 ) ( -1421 -1767 -606 ) ( -1421 -1775 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+}
+}
+}
+// entity 591
+{
+"classname" "trigger_multiple"
+"spawnflags" "257"
+"wait" "1"
+"target" "miembrodsk2"
+// brush 0
+{
+brushDef
+{
+( -1330 -1697 -605 ) ( -1330 -1705 -605 ) ( -1341 -1697 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1330 -1690 -605 ) ( -1341 -1690 -605 ) ( -1330 -1690 -606 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1320 -1697 -605 ) ( -1320 -1697 -606 ) ( -1320 -1705 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1341 -1705 -618 ) ( -1330 -1705 -618 ) ( -1341 -1697 -618 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1341 -1716 -606 ) ( -1341 -1716 -605 ) ( -1330 -1716 -606 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+( -1367 -1705 -606 ) ( -1367 -1697 -606 ) ( -1367 -1705 -605 ) ( ( 0.0625 0 -0 ) ( -0 0.0625 0 ) ) system/trigger 0 0 0
+}
+}
+}
+// entity 592
+{
+"classname" "target_print"
+"origin" "-1344 -1703 -588"
+"targetname" "miembrodsk2"
+"message" "Aqui yace ^2Tr!^4For^1ce"
 }
